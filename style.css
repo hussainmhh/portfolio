@@ -1,0 +1,491 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 80rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+nav h1 {
+    font-size: 24px;
+    float: left;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Add transition for color and background-color */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a subtle background color change */
+}
+
+
+/* Hero section */
+.hero {
+    background-color: #1E1E1E;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/* About section */
+.about {
+    background-color: #333 !important; /* Adding !important to ensure it overrides any other styles */
+    padding: 100px 0px;
+    text-align: center;
+    color: #fff; /* Changing text color to white for better contrast */
+    
+}
+
+
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Projects section */
+.projects {
+    background-color: #4CAF50;
+    padding: 100px 0;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Contact section */
+.contact {
+    background-color: #4CAF50;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.contact p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+.gray-bg {
+    background-color: #f9f9f9;
+}
+
+.black-bg {
+    background-color: #333;
+    color: #fff;
+}
+
+.green-bg {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.contact {
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-option {
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+}
+
+.contact-option img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.contact-option p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-option a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-option a:hover {
+    color: #8AFF80;
+}
+
+/* Programming Skills section */
+.skills {
+    background-color: #1E1E1E; /* Blue background */
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    font-size: 24px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-list li i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Icon color */
+}
+
+.skills-list li .skill-name {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.skills-list li .skill-level-text {
+    font-size: 16px;
+    color: #bbb;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #444;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 20px;
+    background-color: #4CAF50;
+}
+
+.skills-list li:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+/* Extra Small devices (phones, 576px and down) */
+@media only screen and (max-width: 575.98px) {
+    .skills-list li {
+        font-size: 20px;
+        margin: 10px;
+        padding: 8px 16px;
+    }
+    
+    .skills-list li .skill-name {
+        font-size: 20px;
+    }
+
+    .skills-list li .skill-level-text {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .skills-list li {
+        font-size: 22px;
+        margin: 12px;
+        padding: 9px 18px;
+    }
+    
+    .skills-list li .skill-name {
+        font-size: 22px;
+    }
+
+    .skills-list li .skill-level-text {
+        font-size: 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .skills-list li {
+        font-size: 24px;
+        margin: 14px;
+        padding: 10px 20px;
+    }
+    
+    .skills-list li .skill-name {
+        font-size: 24px;
+    }
+
+    .skills-list li .skill-level-text {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .skills-list li {
+        font-size: 26px;
+        margin: 16px;
+        padding: 12px 22px;
+    }
+    
+    .skills-list li .skill-name {
+        font-size: 26px;
+    }
+
+    .skills-list li .skill-level-text {
+        font-size: 17px;
+    }
+}
+
+/* Extra Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .skills-list li {
+        font-size: 28px;
+        margin: 18px;
+        padding: 14px 24px;
+    }
+    
+    .skills-list li .skill-name {
+        font-size: 28px;
+    }
+
+    .skills-list li .skill-level-text {
+        font-size: 18px;
+    }
+}
+
+
+
+/* Media Queries */
+/* Extra Small devices (phones, 576px and down) */
+@media only screen and (max-width: 575.98px) {
+    /* Add styles for Extra Small devices here */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    /* Add styles for Small devices here */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* Add styles for Medium devices here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    /* Add styles for Large devices here */
+}
+
+/* Extra Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Add styles for Extra Large devices here */
+}
+
+header a {
+   text-decoration: none;
+   color:#4CAF50;
+}
+
+.project a {
+    text-decoration: none;
+    color:#4CAF50;
+}
+
+.more p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.more p a {
+    color:#4CAF50
+}

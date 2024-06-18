@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Learn more about me <a href="#about">below!</a></p>
+        </div>
+    </header>
+
+    <section id="about" class="about gray-bg">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello there! My name is Hussain and I am a web developer. I have been passionate about programming since I was 10 years old, and since then I'm working hard to master the art of front-end development.  </p>
+            <p>I am a 16 year old skilled web developer with expertise in HTML, CSS, and JavaScript. I also love creating responsive and user-friendly websites. I'm passionate to learn more about programming and gaining more experience.</p>
+            <p>Although I may be young, I am eager to gain as much experience as possible and continue to grow in my career. I am a quick learner and am always eager to take on new challenges. I believe that with dedication and hard work, I can make my mark in the tech industry and become a valuable contributor to any team.</p>
+            <p>I believe that working in teams is essential for my success and am committed to contributing to a positive and productive work environment. I have excellent communication skills and am comfortable working with colleagues and clients from diverse backgrounds. I'm confident that I can bring my skills to any team I work with and contribute to the success of the project.</p>
+            <p>So if you're looking for a young and motivated developer, look no further. I am ready to take on new challenges and gain valuable experience.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills blue-bg">
+        <div class="container">
+            <h2>Programming Skills</h2>
+            <ul class="skills-list">
+                <li>
+                    <i class="fab fa-html5"></i>
+                    <p class="skill-name">HTML</p>
+                    <p class="skill-level-text">Advanced</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-css3-alt"></i>
+                    <p class="skill-name">CSS</p>
+                    <p class="skill-level-text">Advanced</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-js"></i>
+                    <p class="skill-name">JavaScript</p>
+                    <p class="skill-level-text">Intermediate</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-react"></i>
+                    <p class="skill-name">React</p>
+                    <p class="skill-level-text">Beginner</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 40%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-python"></i>
+                    <p class="skill-name">Python</p>
+                    <p class="skill-level-text">Intermediate</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="projects" class="projects black-bg">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>This is a styled and fully responsive weather app I made linked with an API from OpenWeatherMap, just enter any city name and it'll give you the temperature and status. Check it out on <a href="https://github.com/hussainmhh/weather-project" target="_blank">Github!</a></p>
+            </div>
+            <div class="project">
+                <h3>Covid-19 Tracker</h3>
+                <p>This is a styled Covid-19 Tracker I made in late 2021 that's linked to an API, it provides updated global stats and a certain country stats. Check it out on <a>Github!</a></p>
+            </div>
+            <div class="project">
+                <h3>Budget Tracker</h3>
+                <p>This Python project is a simple yet functional budget tracker application with a graphical user interface (GUI) built using <strong>tkinter</strong>. It allows users to track their income and expenses, providing a visual representation of their financial status through a pie chart. Check it out on <a>Github!</a></p>
+            </div>
+            <div class="more">
+                <p>There's more to come! View my other projects on my <a href="https://github.com/hussainmhh">Github!</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact green-bg">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-options">
+                <div class="contact-option">
+                    <img src="images/github-icon.png" alt="Github">
+                    <p>Github: <a href="https://github.com/hussainmhh" target="_blank">@hussainmhh</a></p>
+                </div>
+                <div class="contact-option">
+                    <img src="images/mail-icon.png" alt="Email">
+                    <p>Email: <a href="mailto:hussainalhamdanbe@gmail.com">Click Here!</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default anchor click behavior
+                    const targetId = this.getAttribute('href').substring(1); // Get the target section ID
+                    const targetElement = document.getElementById(targetId);
+
+                    // Scroll to the target element smoothly
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</html>
